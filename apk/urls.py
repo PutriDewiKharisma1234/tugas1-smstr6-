@@ -22,7 +22,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.coba),
+    path('', views.pendaftaran),
+    path('', views.pinjam),
     path('api-auth/', include('rest_framework.urls')),
     
 ]

@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def coba(request):
-  return render(request, 'coba.html')
+def pendaftaran(request):
+  return render(request, 'pendaftaran.html')
+
+def pinjam(request):
+  return render(request, 'pinjam.html')
