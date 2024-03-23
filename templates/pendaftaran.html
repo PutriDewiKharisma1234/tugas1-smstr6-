@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Perpustakaan</title>
-</head>
-
-<body>
-    <h1>Pendaftaran Anggota</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Daftar</button>
-    </form>
-</body>
-
-
-
+    <body>
+        <ul>
+            <h1 style="color:rgb(0, 183, 255);"> Selamat Datang Di Perpustakaan &#129303;</h1>
+            <h3 style="color:rgb(212, 0, 255);"> "Jika anda belum memiliki akun Klik Daftar"</h3>
+            <button >
+                <li><a href="masuk"> Daftar </a></li>
+            </button>
+            
+        </ul>
+        <ul>
+            <h3 style="color:rgb(212, 0, 255);"> "Jika anda ingin meminjam buku maka Klik Pinjam Buku</h3>
+            <button>
+                <li><a href=""> Pinjam </a></li>
+            </button>
+           
+        </ul>
+        <h3>Halo: {{user}}</h3>
+    </body>
 </html>
+

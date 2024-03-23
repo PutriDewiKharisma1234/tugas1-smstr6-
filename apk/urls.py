@@ -19,11 +19,12 @@ from django.urls import path, include
 
 from perpustakaan import views
 from . import views
+from .views import BagianLogin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.pendaftaran),
-    path('', views.pinjam),
+    path('masuk/', BagianLogin, name="daftar"),
     path('api-auth/', include('rest_framework.urls')),
     
 ]
